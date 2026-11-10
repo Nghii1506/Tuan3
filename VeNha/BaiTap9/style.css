@@ -1,0 +1,102 @@
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Giao diện chung */
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f7;
+    color: #704b59;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #e8a9bd, #d88da8);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header i {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Nội dung chính */
+.container {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #b86f89;
+}
+
+/* Danh sách thẻ */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px #d99aaf25;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px #d99aaf45;
+}
+
+.card i {
+    font-size: 40px;
+    color: #d88da8;
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #b86f89;
+}
+
+.card p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #e8a9bd;
+    color: white;
+}
+
+footer i {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
