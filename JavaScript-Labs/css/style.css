@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px 12px;
+    background-color: #E6DCCB; /* Nền ngoài màu be đậm ấm */
+    color: #4A3F32;
+    font-family: "Times New Roman", Times, Georgia, serif;
+    line-height: 1.6;
+}
+
+.paper-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #F6F0E4; /* Khung giấy màu be kem chủ đạo */
+    padding: 32px 38px;
+    border: 1px solid #D4C4A8;
+}
+
+.page-header {
+    text-align: center;
+}
+
+.page-header h2 {
+    margin: 0 0 8px;
+    color: #76664E;
+    font-size: 1.35rem;
+}
+
+.page-header h1 {
+    margin: 0 0 6px;
+    color: #5E4D37;
+    font-size: 1.85rem;
+}
+
+.subtitle {
+    margin: 0;
+    color: #6E5D47;
+    font-weight: bold;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #D2C2A8;
+    margin: 22px 0;
+}
+
+.section-title {
+    color: #6B5A43;
+    font-size: 1.28rem;
+    margin: 0 0 14px;
+}
+
+/* Thông tin cá nhân */
+.profile-box {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #CBB99B;
+    display: block;
+}
+
+.info-col p {
+    margin: 5px 0;
+}
+
+a {
+    color: #5C4931;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #2F2417;
+}
+
+/* Khối danh sách các bài Lab màu be */
+.lab-block {
+    background-color: #ECE2D0;
+    border: 1px solid #D6C7AE;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+}
+
+.lab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #CBB99B;
+}
+
+.main-lab-link {
+    font-weight: bold;
+    background-color: #DFD2BC;
+    padding: 3px 10px;
+    text-decoration: none;
+    border: 1px solid #C5B293;
+}
+
+.main-lab-link:hover {
+    background-color: #D3C3A7;
+}
+
+.ex-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.ex-links a {
+    background-color: #F6F0E4;
+    border: 1px solid #D2C2A8;
+    padding: 4px 10px;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.ex-links a:hover {
+    background-color: #E2D5BE;
+    text-decoration: underline;
+}
+
+/* Kiến thức & Tự đánh giá */
+.paragraph,
+.knowledge-item p {
+    margin: 0 0 10px;
+    text-align: justify;
+}
+
+.reflection-box {
+    background-color: #ECE2D0;
+    padding: 14px 18px;
+    border-left: 4px solid #76664E;
+}
+
+.reflection-box p {
+    margin: 0;
+    text-align: justify;
+}
+
+code {
+    background-color: #E5D9C3;
+    padding: 1px 5px;
+    font-size: 0.9em;
+}
+
+.page-footer {
+    text-align: center;
+    color: #6E5D47;
+}
+
+@media (max-width: 600px) {
+    .paper-container {
+        padding: 20px 16px;
+    }
+
+    .profile-box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
