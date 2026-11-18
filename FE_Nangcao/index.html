@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng hợp thực hành Web - Nguyễn Hoàng Bảo Nghi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+        h1, h2, h3 { color: #0056b3; }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 12px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        code { font-family: Consolas, monospace; }
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            margin-top: 8px;
+            margin-right: 10px;
+            background: #0056b3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn-github { background: #24292e; }
+    </style>
+</head>
+<body>
+
+    <section id="thong-tin-ca-nhan">
+        <h1>Bài tập cá nhân buổi 5</h1>
+        <p><strong>Họ và tên sinh viên:</strong> Nguyễn Hoàng Bảo Nghi</p>
+        <strong>Mã số sinh viên:</strong> 31241022898</p>
+        <p>
+            <a class="btn btn-github" href="https://github.com/Nghii1506/Tuan3" target="_blank">
+                Truy cập GitHub của tôi
+            </a>
+        </p>
+    </section>
+
+    <section id="bai-1-responsive">
+        <h2>Bài 1: Thiết kế Web đáp ứng (Responsive Web Design)</h2>
+        <ul>
+            <li>Cấu hình thẻ <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> để tương thích kích thước màn hình thiết bị.</li>
+            <li>Chia bố cục 2 cột <code>.left</code> (70%) và <code>.right</code> (30%) bằng thuộc tính <code>float</code>.</li>
+            <li>Dùng <code>@media</code> (Media Queries) xử lý giao diện: màn hình dưới <code>768px</code> (xếp dọc 100%), từ <code>321px - 479px</code> (ẩn cột phải), và chế độ in <code>print</code> (ẩn cột trái).</li>
+            <li>Sử dụng thẻ <code>&lt;picture&gt;</code> và <code>&lt;source&gt;</code> để tự động thay đổi hình ảnh theo độ rộng màn hình (<code>800px</code>, <code>600px</code>).</li>
+        </ul>
+        <a class="btn" href="Bai1.html" target="_blank">Mở trang thực hành Bài 1</a>
+    </section>
+
+    <section id="bai-2-devtools-dino">
+        <h2>Bài 2: Thực hành Chrome DevTools &amp; JavaScript Console (Hack Game Dino)</h2>
+        <ul>
+            <li><strong>Kỹ thuật Debug &amp; Breakpoint:</strong> Đặt điểm dừng trong tab <em>Sources</em>, chuyển khung thực thi sang <code>Runner.update</code> trong <em>Call Stack</em> để trích xuất đối tượng <code>Runner</code> ra biến toàn cục (<code>window.runner = this;</code>).</li>
+            <li><strong>Các câu lệnh điều khiển trên Console:</strong></li>
+        </ul>
+        <pre><code>runner.gameOver = () =&gt; {};       // Vô hiệu hóa Game Over (bất tử)
+runner.setSpeed(10000);           // Tăng tốc độ chạy của trò chơi
+runner.tRex.setJumpVelocity(15);  // Chỉnh độ cao cú nhảy của khủng long</code></pre>
+    </section>
+
+</body>
+</html>
